@@ -2,7 +2,7 @@
 
 This is a repository with an empty Symfony project.
 List of commands to reproduce it:
-### Create composer symfony project
+### Reproduce project from scratch
 ```shell
 docker run -v "$(pwd)":/app -it --rm --user 1000:1000 composer create-project symfony/skeleton .
 ```
@@ -26,6 +26,12 @@ composer require template
 composer require profiler --dev
 ```
 Maker-bundle for creating symfony objects directly from php cli. Template for twig. Profiler to add Web Profiler Toolbar to every page for debugging.
+
+## Running the project
+To run current project you need to clone it locally and run single command:
+```shell
+make run
+```
 
 ## PHPStorm setup
 Open _File->Settings->PHP->Debug_, check "Break at first line in PHP scripts"
